@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html> <!--Andrew Richards-->
+<head>
+    <title>Game</title>
+    <style>
+        a {color:aquamarine}
+        h1 {font-family: Arial, Helvetica, sans-serif;}
+        h2 {font-family: 'Times New Roman', Times, serif;}
+
+    </style>
+
+</head>
+<body style="background-color: rgb(224, 230, 231);">
+    <div id="challengehead" style="font-family: Arial, Helvetica, sans-serif;"><h1>MW2 Map Challenge</h1><hr></div>
+    <div id="randquestion"></div>
+    <div id="image"><img src="mw2maps.png" usemap="#image-map"></div>
+    <div id="randimap"></div>
+
+    <script>
+        let q1 = "<h2>Click on the map Favela.</h2>";
+        let q2 = "<h2>Click on the map Highrise.</h2>";
+        let q3 = "<h2>Click on the map Afghan.</h2>";
+        let q4 = "<h2>Click on the map Underpass.</h2>";
+        let q5 = "<h2>Click on the map Wasteland.</h2>";
+        let q6 = "<h2>Click on the map Quarry.</h2>";
+        let q7 = "<h2>Click on the map Invasion.</h2>";
+        let q8 = "<h2>Click on the map Derail.</h2>";
+        
+        
+
+        let map1 ="<map name='image-map'><area target='' alt='map' title='map' href='correct.html' coords='12,157,274,11' shape='rect'><area target='' alt='map' title='map' href='wrong.html' coords='6,178,291,180,299,11,572,11,589,676,6,674' shape='poly'></map>";
+        let map2 ="<map name='image-map'><area target='' alt='map' title='map' href='correct.html' coords='304,350,587,505' shape='rect'><area target='' alt='map' title='map' href='wrong.html' coords='592,680,9,677,16,571,15,524,16,356,12,186,14,18,276,12,569,6,286,332,305,523,583,527,596,614,549,595,594,613' shape='poly'></map>";
+        let map3 ="<map name='image-map'><area target='' alt='map' title='map' href='correct.html' coords='292,7,575,165' shape='rect'><area target='' alt='map' title='map' href=wrong.html' coords='592,680,7,679,8,8,277,10,294,183,293,184,571,185' shape='poly'></map>";
+        let map4 ="<map name='image-map'><area target='' alt='map' title='map' href='correct.html' coords='305,522,593,682' shape='rect'><area target='' alt='map' title='map' href=wrong.html' coords='7,5,576,6,589,503,303,503,293,505,295,681,7,682' shape='poly'></map>";
+        let map5 ="<map name='image-map'><area target='' alt='map' title='map' href='correct.html' coords='5,351,294,507' shape='rect'><area target='' alt='map' title='map' href=wrong.html' coords='328,512,7,519,23,673,579,677,587,355,306,353,304,496,596,507,571,328,574,186,571,130,577,8,15,8,9,337,253,335,308,507,564,509' shape='poly'></map>";
+        let map6 ="<map name='image-map'><area target='' alt='map' title='map' href='correct.html' coords='6,177,276,335' shape='rect'><area target='' alt='map' title='map' href=wrong.html' coords='6,351,9,680,589,677,587,356,570,190,568,11,10,7,11,165,290,164,288,350' shape='poly'></map>";
+        let map7 ="<map name='image-map'><area target='' alt='map' title='map' href='correct.html' coords='4,515,297,686' shape='rect'><area target='' alt='map' title='map' href=wrong.html' coords='7,1,576,3,588,674,304,683,303,502,11,502,13,384' shape='poly'></map>";
+        let map8 ="<map name='image-map'><area target='' alt='map' title='map' href='correct.html' coords='287,181,578,336' shape='rect'><area target='' alt='map' title='map' href='wrong.html' coords='591,3,9,8,6,679,317,680,591,680,594,475,589,341,275,339,282,177,591,176,589,44' shape='poly'></map>"
+
+        let randq = Math.floor(Math.random()*10)%8+1;
+
+        console.log(randq);
+
+        if (randq == 1){
+            document.getElementById('randquestion').innerHTML = q1;
+            document.getElementById('randimap').innerHTML = map1;
+        } else if (randq == 2) {
+            document.getElementById('randquestion').innerHTML = q2;
+            document.getElementById('randimap').innerHTML = map2;
+        } else if (randq == 3) {
+            document.getElementById('randquestion').innerHTML = q3;
+            document.getElementById('randimap').innerHTML = map3;
+        } else if (randq == 4) {
+            document.getElementById('randquestion').innerHTML = q4;
+            document.getElementById('randimap').innerHTML = map4;
+        } else if (randq == 5) {
+            document.getElementById('randquestion').innerHTML = q5;
+            document.getElementById('randimap').innerHTML = map5;
+        } else if (randq == 6) {
+            document.getElementById('randquestion').innerHTML = q6;
+            document.getElementById('randimap').innerHTML = map6;
+        } else if (randq == 7) {
+            document.getElementById('randquestion').innerHTML = q7;
+            document.getElementById('randimap').innerHTML = map7;
+        } else if (randq == 8) {
+            document.getElementById('randquestion').innerHTML = q8;
+            document.getElementById('randimap').innerHTML = map8;
+        }
+
+    </script>
+</body>
+</html> <!--Andrew Richards-->
